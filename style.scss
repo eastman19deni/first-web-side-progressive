@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+body {
+    font-family: 'latolight';
+}
+
 summary {
     display: block;
 }
@@ -14,13 +18,6 @@ summary::-webkit-details-marker {
     display: none;
 }
 
-a {
-    text-decoration: none;
-}
-
-body {
-    font-family: "Lato", sans-serif;
-}
 
 .center {
     padding-left: calc(50% - $widthSite/2);
@@ -200,7 +197,7 @@ body {
     }
 }
 
-.box-content{
+.box-content {
     overflow: hidden;
 }
 
@@ -233,19 +230,38 @@ body {
     }
 }
 
-.breadcrumbs__link {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+.breadcrumbs {
+    &__ul {
+        list-style-type: none;
+        display: flex;
+    }
 
-    color: #636363;
+    &__li:not(:last-child)::after {
+        content: '/';
+        padding-left: 8px;
+        padding-right: 8px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+    }
 
-    &_site {
+    &__link {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+    }
+
+    &__li:last-child .breadcrumbs__link {
         font-weight: 700;
         color: $colorSelectSite;
     }
 }
+
+
 
 
 
