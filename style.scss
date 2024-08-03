@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'latolight';
+    font-family: sans-serif;
 }
 
 summary {
@@ -187,7 +187,7 @@ summary::-webkit-details-marker {
     }
 }
 
-#burger {
+#check {
     position: absolute;
     left: -999999999px;
     visibility: hidden;
@@ -201,16 +201,51 @@ summary::-webkit-details-marker {
     overflow: hidden;
 }
 
-.nav {
-    background: #FFFFFf;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+.menu {
     width: 232px;
+    position: absolute;
+    top: 75px;
+    right: 0;
     padding: 32px;
     box-sizing: border-box;
-    position: absolute;
-    top: 81px;
-    right: 0;
-    transition: right .3s;
+    background: #FFFFFf;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+    &__heading{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: $colorText;
+        margin-bottom: 4px;
+    }
+    &__subheading{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $colorSelectSite;
+        margin-bottom: 12px;
+        margin-top: 20px;
+    }
+    &__ul{
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        list-style-type: none;
+        padding-left: 20px;
+    }
+    &__link{
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6f6e6e;
+        &:hover{
+            color: $colorSelectSite;
+        }
+    }
 }
 
 .top-head {
@@ -261,15 +296,10 @@ summary::-webkit-details-marker {
     }
 }
 
-
-
-
-
 .product-box {
     @include centerflex();
     gap: $gapGrid;
 }
-
 
 .product {
     width: 360px;
@@ -307,4 +337,42 @@ summary::-webkit-details-marker {
         line-height: 17px;
         color: #5d5d5d;
     }
+}
+
+.scroll {
+    border: 1px solid #EBEBEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 144px;
+
+    &__bar {
+        width: 284px;
+        height: 44px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &_arrowLeft {
+            width: 8px;
+            height: 14px;
+
+        }
+
+        &_middleBar {
+            width: 203px;
+            height: 19px;
+            font-style: Lato;
+            font-weight: 300;
+            font-size: 16px;
+        }
+
+        &_arrowRigth {
+            width: 8px;
+            height: 14px;
+        }
+    }
+
+
+
 }
