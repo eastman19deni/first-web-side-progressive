@@ -185,6 +185,11 @@ summary::-webkit-details-marker {
         align-items: center;
         gap: 41px;
     }
+    &__right{
+        display: flex;
+        align-items: baseline;
+        gap: 32px;
+    }
 }
 
 #check {
