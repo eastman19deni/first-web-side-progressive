@@ -383,6 +383,8 @@ summary::-webkit-details-marker {
   margin-bottom: 16px;
 }
 .salesDiscounts h1 {
+  left: 40px;
+  position: relative;
   font-size: 24px;
   margin-bottom: 16px;
 }
@@ -407,6 +409,8 @@ summary::-webkit-details-marker {
   margin-bottom: 16px;
 }
 .qualityAssurance h1 {
+  left: 40px;
+  position: relative;
   font-size: 24px;
   margin-bottom: 16px;
 }
