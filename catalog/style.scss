@@ -377,7 +377,90 @@ summary::-webkit-details-marker {
             height: 14px;
         }
     }
+}
 
+.subBottom{
+    display: flex;
+    background-color: #222224;
+    justify-content: space-around;
+    
+}
 
+.freeDelivery{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #FBFBFB;
+    margin: 100px;
 
+    & img{
+        width: 44px;
+        height: 32px;
+        margin-bottom: 16px;
+    }
+    & h1{
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    & p{
+        font-size: 14px;
+        margin-bottom: 16px;
+        position: relative;
+        left: 20px;
+    }
+}
+
+.salesDiscounts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #FBFBFB;
+    margin: 100px;
+
+    & img{
+        width: 44px;
+        height: 32px;
+        margin-bottom: 16px;
+
+    }
+    & h1{
+        font-size: 24px;
+        margin-bottom: 16px;
+
+    }
+    & p{
+        font-size: 14px;
+        margin-bottom: 16px;
+        position: relative;
+        left: 20px;
+    }
+}
+
+.qualityAssurance{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #FBFBFB;
+    margin: 100px;
+
+    & img{
+        width: 44px;
+        height: 32px;
+        margin-bottom: 16px;
+
+    }
+    & h1{
+        font-size: 24px;
+        margin-bottom: 16px;
+
+    }
+    & p{
+        font-size: 14px;
+        margin-bottom: 16px;
+        position: relative;
+        left: 20px;
+    }
 }
