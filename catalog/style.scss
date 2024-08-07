@@ -464,3 +464,120 @@ summary::-webkit-details-marker {
         left: 20px;
     }
 }
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.buttons button{
+        flex: 1;
+        padding: 15px;
+        margin: 0 10px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+}
+
+.clear-card{
+    background-color: #fff;
+}
+.continue-shopping{
+    background-color: #fff;
+}
+
+.subscribe-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.information{
+    min-width: 500px;
+
+    &__img{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    &__text{
+        font-style: italic;
+        font-size: 18px;
+    }
+}
+
+.subscribe{
+    min-width: 500px;
+
+    &__text{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    &__texts{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    &__from{
+        display: flex;
+        justify-content: center;
+
+        &_input[type="email"]{
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+        }
+
+        &_button{
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background-color: $colorSelectSite;
+            color: #fff;
+            cursor: pointer;
+            outline: none;
+        }
+    }
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p{
+    margin: 0;
+}
+
+footer .social-media{
+    margin-top: 10px;
+}
+
+footer .social-media a{
+        margin:0 10px;
+        display: inline-block;
+}
+
+footer .social-media img{
+        width: 24px;
+        height: 24px;
+}
+
+
